@@ -10,13 +10,16 @@
     "test": "jest"
   },
   "jest": {
-    "collectCoverage":true
+    "collectCoverage": true
   },
   "keywords": [],
   "author": "",
   "license": "Open Software License (OSL 3.0)",
   "dependencies": {
-    "axios": "^1.4.0",
-    "jest": "^29.6.2"
+    "axios": "^1.18.1",
+    "jest": "^30.4.2"
+  },
+  "devDependencies": {
+    "@clarchikjs/release-scripts": "^1.0.7"
   }
 }

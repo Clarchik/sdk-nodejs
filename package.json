@@ -1,6 +1,6 @@
 {
   "name": "@clarchikjs/liqpay-sdk-nodejs",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Node.js sdk for liqpay.ua api",
   "keywords": [],
   "homepage": "https://github.com/Clarchik/sdk-nodejs#readme",

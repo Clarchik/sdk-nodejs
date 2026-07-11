@@ -1,8 +1,13 @@
-const LiqPay = require('../lib/liqpay'); // Adjust the path to your LiqPay class file
-const crypto = require('crypto');
-const axios = require('axios');
+import crypto from 'node:crypto';
+import { jest, describe, beforeEach, it, expect } from '@jest/globals';
 
-jest.mock('axios'); // This will mock the axios module
+const axios = { post: jest.fn() };
+
+jest.unstable_mockModule('axios', () => ({
+    default: axios,
+}));
+
+const { default: LiqPay } = await import('../lib/liqpay.js');
 describe('LiqPay class', () => {
 
     let liqPayInstance;
@@ -185,10 +190,10 @@ describe('LiqPay class', () => {
             liqPayInstance = new LiqPay('public key', 'Private key'); // Assuming you have a constructor in your LiqPay class
         });
 
-        it('should return a base64 encoded SHA-1 hash of the input string', () => {
+        it('should return a base64 encoded SHA-256 hash of the input string', () => {
             const input = "test";
             const output = liqPayInstance.str_to_sign(input);
-            const expectedOutput = crypto.createHash('sha1').update(input).digest('base64');
+            const expectedOutput = crypto.createHash('sha256').update(input).digest('base64');
 
             expect(output).toBe(expectedOutput);
         });

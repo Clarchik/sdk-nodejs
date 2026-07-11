@@ -1,3 +1,7 @@
+## <small>[2.0.5](https://github.com/Clarchik/sdk-nodejs/compare/v2.0.3...v2.0.5) (2026-07-11)</small>
+### Code Refactoring
+
+* use esm module and add typings ([4faf18a](https://github.com/Clarchik/sdk-nodejs/commit/4faf18aa6d3e3128be981ebad80d85356df96ca6))
 ## <small>[2.0.4](https://github.com/Clarchik/sdk-nodejs/compare/v2.0.3...v2.0.4) (2026-07-11)</small>
 ## <small>[2.0.3](https://github.com/Clarchik/sdk-nodejs/compare/v2.0.0...v2.0.3) (2026-07-11)</small>
 ### Features

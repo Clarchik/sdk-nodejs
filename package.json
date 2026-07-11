@@ -3,14 +3,13 @@
   "version": "2.0.0",
   "description": "Node.js sdk for liqpay.ua api",
   "main": "lib/liqpay.js",
-  "type": "module",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "jest",
     "release": "node scripts/release.mjs",
-    "publish:main": "node scripts/publish.ts"
+    "publish:main": "node scripts/publish.mjs"
   },
   "jest": {
     "collectCoverage": true
